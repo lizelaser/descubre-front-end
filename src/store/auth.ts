@@ -11,6 +11,7 @@ export interface User {
   lastName: string;
   email: string;
   gender: "M" | "F";
+  birthday: Date;
   phone: string;
   status: boolean;
 }

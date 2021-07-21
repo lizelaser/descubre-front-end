@@ -7,7 +7,10 @@ el-container
         el-avatar(icon="el-icon-user-solid", style="cursor: pointer")
         template(v-slot:dropdown)
           el-dropdown-menu
-            el-dropdown-item(icon="el-icon-user") Mi perfil
+            el-dropdown-item(
+              @click="router.push('/user')",
+              icon="el-icon-user"
+            ) Mi perfil
             el-dropdown-item(
               @click="logout",
               divided,
@@ -18,34 +21,49 @@ el-container
         div {{ authState.user?.email }}
 
     el-menu(:default-active="route.path", mode="horizontal", router)
+      el-menu-item(index="/") Inicio
       el-menu-item(index="/careers") Carreras
       el-menu-item(index="/test") Test
+      el-menu-item(v-if="authState.isAuthenticated", index="/results") Resultados
 
   el-main
     .bg-container
-      router-view
+      router-view(v-if="route.path !== '/'")
+      el-card(v-else, style="max-width: 500px; margin: auto")
+        template(v-slot:header) ¡Bienvenido!
+        span Este test de orientación vocacional virtual te guiará a tráves del camino del conocimiento propio y de tu entorno para lograr encontrar la carrera perfecta para ti.
+          br
+          br
+          | ¡Dale click a
+          b {{ ' "Test" ' }}
+          | en este
+          a(href="/test", style="margin-left: 6px; margin-right: 6px") enlace
+          | en la esquina superior derecha para empezar!
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import { useRoute } from "vue-router";
+import { useRoute, useRouter } from "vue-router";
 import { ACCESS_KEY, useAuthStore } from "../store/auth";
 
 export default defineComponent({
   name: "home",
   setup() {
     const route = useRoute();
+    const router = useRouter();
     const { authState, mutate } = useAuthStore();
 
     return {
       authState,
       route,
+      router,
 
       logout: () => {
         mutate((state) => {
           state.access = undefined;
           localStorage.removeItem(ACCESS_KEY);
         });
+        router.replace("/");
       },
     };
   },
