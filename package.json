@@ -10,9 +10,9 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
-    "element-plus": "^1.0.2-beta.55",
-    "enigmajs-core": "^0.1.1",
-    "vue": "^3.1.5",
+    "element-plus": "^1.0.2-beta.70",
+    "enigmajs-core": "^0.1.2",
+    "vue": "^3.2.2",
     "vue-router": "^4.0.10"
   },
   "devDependencies": {

@@ -370,7 +370,7 @@ export default defineComponent({
                 password: user.password,
               },
             },
-            message: "No se encontraron credenciales válidas",
+            errMessage: "No se encontraron credenciales válidas",
             ifOk: async ({ payload }) => {
               mutate((state) => {
                 state.access = payload;
@@ -381,8 +381,8 @@ export default defineComponent({
 
               await axios.buildResponses({
                 requests: [
-                  axios.getResponse<User>("/user/by-token"),
-                  axios.getResponse<Test[]>("/test"),
+                  axios.fetchResponse<User>("/user/by-token"),
+                  axios.fetchResponse<Test[]>("/test"),
                 ],
                 ifOk: ([user, test]) => {
                   localStorage.setItem(USER_KEY, JSON.stringify(user));
