@@ -13,12 +13,9 @@
 * [Project Status](#project-status)
 * [Room for Improvement](#room-for-improvement)
 * [Contact](#contact)
-<!-- * [License](#license) -->
 
-&nbsp;
 
 ## General Information
-----
 
 ### **Introduction**
 <p align="justify">Vocational guidance includes all counseling activities related to career choice throughout life.  In the vocational guidance process, self-knowledge, information about the work environment, and individual needs (including family, work, personal concerns, and leisure) are recognized as integral to decision making and career planning.<p>
@@ -29,10 +26,8 @@
 ### **Objectives**
 <p align="justify">The objective of this project is to develop a vocational guidance application with web technologies, based on psychometric tests of vocational preferences, aptitudes and behavioral profile, with the purpose of supporting pre-university students in the choice of a university or technical career.</p>
 
-&nbsp;
 
 ## Requirements
-----
 
 
 |   **User story**                |          **Description**         |
@@ -45,14 +40,13 @@
 | Login | The user (student) will be able to authenticate himself/herself to log in to the application. |
 | Log out | The user (student) will be able to log out to the application. |
 
-&nbsp;
+
 
 ## Initial Architecture
-----
+
 ![home](./images/architecture.jpg)
 
 ## Technologies Used
-----
 
 ### **Backend Stack**
 - Net - version 6.0
@@ -67,10 +61,9 @@
 - Element-Plus - version 1.0.2-beta.70
 - Sass - version 1.35.2
 
-&nbsp;
+
 
 ## HTTP API
-----
 
 According to the requirements, the api must contain the following end points.
 
@@ -142,10 +135,9 @@ According to the requirements, the api must contain the following end points.
 * `GET /recommendation/:id`
 * `POST /recommendation`
 
-&nbsp;
+
 
 ## Setup
-----
 
 ### **Prerequisites**
 #### **Backend**
@@ -224,10 +216,8 @@ According to the requirements, the api must contain the following end points.
   yarn run dev # OR yarn dev
   ```
 
-&nbsp;
 
 ## Interfaces
-----
 
 ### **Home**
 ![home](./images/home.jpg)
@@ -247,10 +237,10 @@ According to the requirements, the api must contain the following end points.
 
 
 ## Project Status
-----
+
 [![Project Status: Inactive – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/inactive.svg)](https://www.repostatus.org/#active)
 
-&nbsp;
+
 
 ## Room for Improvement
 ----
@@ -260,10 +250,10 @@ Room for improvement:
 To do:
 - Automating tests that include other influential variables in vocational guidance
 
-&nbsp;
+
 
 ## Contact
-----
+
 Lizeth La Serna - [@lizelaser](https://github.com/lizelaser) - lizeth.lasernafelices@gmail.com
 
 Project Link: [https://github.com/lizelaser/descubre-front-end](https://github.com/gedzeppelin/descubre-front-end.git)
