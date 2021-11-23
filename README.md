@@ -42,19 +42,8 @@
 
 
 
-## Initial Architecture
-
-![home](./images/architecture.jpg)
-
 ## Technologies Used
 
-### **Backend Stack**
-- Net - version 6.0
-- Entity Framework Core - version 6.0.0
-- PostgreSQL/Npgsql - version 6.0.0
-- Lizelaser0310.Utilities - version 0.1.17
-
-### **Frontend Stack**
 - Vue - version 3.2.2
 - Axios - version 0.21.1
 - Vite - version 2.4.2
@@ -140,27 +129,7 @@ According to the requirements, the api must contain the following end points.
 ## Setup
 
 ### **Prerequisites**
-#### **Backend**
 
-- Clone the repo via [github-cli](https://cli.github.com/)
-  ```bash
-  gh repo clone lizelaser/descubre-back-end
-  ```
-  OR
-
-  ```bash
-  # dotnet
-  git clone https://github.com/lizelaser/descubre-back-end.git
-  ```
-
-- Install dotnet tools via [net-cli](https://docs.microsoft.com/en-us/dotnet/core/tools/)
-
-  ```bash
-  # dotnet
-  dotnet tool install --global dotnet-ef
-  ```
-
-#### **Frontend**
 - Clone the repo via [github-cli](https://cli.github.com/)
   ```bash
   gh repo clone gedzeppelin/descubre-front-end
@@ -168,7 +137,6 @@ According to the requirements, the api must contain the following end points.
   OR
 
   ```bash
-  # dotnet
   git clone https://github.com/gedzeppelin/descubre-front-end.git
   ```
 
@@ -181,23 +149,7 @@ According to the requirements, the api must contain the following end points.
   yarn install # OR yarn
   ```
 ### **Instalation**
-#### **Backend**
 
-- Scaffold
-  ```bash
-  # dotnet ef
-  dotnet ef dbcontext scaffold "Host=.;Database=Descubre;Username={username};Password={password}"  Npgsql.EntityFrameworkCore.PostgreSQL -o ../Domain/Models -c DescubreContext -n Domain.Models -f --no-pluralize
-
-  ```
-
-- Run the app at port 5000 via [net-cli](https://docs.microsoft.com/en-us/dotnet/core/tools/)
-
-  ```bash
-  # dotnet
-  dotnet run
-  ```
-
-#### **Frontend**
 - Install dependencies
 
   ```bash
@@ -258,5 +210,3 @@ Lizeth La Serna - [@lizelaser](https://github.com/lizelaser) - lizeth.lasernafel
 
 Project Link: [https://github.com/lizelaser/descubre-front-end](https://github.com/gedzeppelin/descubre-front-end.git)
 
-
-<p align="right">(<a href="#top">back to top</a>)</p>
