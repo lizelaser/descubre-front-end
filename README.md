@@ -150,25 +150,6 @@ Then you need to install the dependencies for the project:
   # yarn
   yarn install # OR yarn
   ```
-## Usage
-
-- Install dependencies
-
-  ```bash
-  # npm
-  npm install
-  # yarn
-  yarn install # OR yarn
-  ```
-
-- Start the app at port 3000 via [vue-cli](https://cli.vuejs.org/)
-
-  ```bash
-  # npm
-  npm run dev
-  # yarn
-  yarn run dev # OR yarn dev
-  ```
 
 ## Usage
 
