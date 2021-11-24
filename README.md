@@ -1,12 +1,12 @@
 # Vocational guidance system - Descubre
-> Outline a brief description of your project.
-> Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
+> Vocational Guidance application containing psychometric test sections and career information as a guide for students.
 
 ## Table of Contents
 * [General Info](#general-information)
 * [Requirements](#requirements)
 * [Initial Architecture](#initial-architecture)
 * [Technologies Used](#technologies-used)
+* [Features](#features)
 * [HTTP API](#http-api)
 * [Interfaces](#interfaces)
 * [Setup](#setup)
@@ -16,9 +16,6 @@
 
 
 ## General Information
-
-### **Introduction**
-<p align="justify">Vocational guidance includes all counseling activities related to career choice throughout life.  In the vocational guidance process, self-knowledge, information about the work environment, and individual needs (including family, work, personal concerns, and leisure) are recognized as integral to decision making and career planning.<p>
 
 ### **Problem**
 <p align="justify">The lack of vocational orientation in young people in the pre-university stage can be attributed to the problem of choosing a career that is not in accordance with their interests, abilities and aptitudes. An erroneous career decision could lead to various problems in the course of the decision-maker's personal, university and work life, such as desertion, poor university performance, work frustration, repercussions on physical health, stress, anxiety, poor work performance, feelings of failure and personal dissatisfaction.</p>
@@ -50,7 +47,14 @@
 - Element-Plus - version 1.0.2-beta.70
 - Sass - version 1.35.2
 
-
+## Features
+- Login
+- Account creation for student
+- Show profile
+- Register response of
+- Record test response
+- view career information
+- Show final test result
 
 ## HTTP API
 
@@ -125,30 +129,28 @@ According to the requirements, the api must contain the following end points.
 * `POST /recommendation`
 
 
-
 ## Setup
 
-### **Prerequisites**
-
-- Clone the repo via [github-cli](https://cli.github.com/)
+### **Get the repository locally**
+Fist ofall, clone the repo via [github-cli](https://cli.github.com/)
   ```bash
-  gh repo clone gedzeppelin/descubre-front-end
+  gh repo clone lizelaser/descubre-front-end
   ```
   OR
 
   ```bash
-  git clone https://github.com/gedzeppelin/descubre-front-end.git
+  git clone https://github.com/lizelaser/descubre-front-end.git
   ```
 
-- Install dependencies
-
+### **Install dependencies**
+Then you need to install the dependencies for the project:
   ```bash
   # npm
   npm install
   # yarn
   yarn install # OR yarn
   ```
-### **Instalation**
+## Usage
 
 - Install dependencies
 
@@ -168,6 +170,29 @@ According to the requirements, the api must contain the following end points.
   yarn run dev # OR yarn dev
   ```
 
+## Usage
+
+### Build and launch for development
+Start a development server with hot-reload for development and launch the project on localhost:3000;
+
+```bash
+#npm
+npm run dev
+
+#yarn
+yarn dev
+```
+
+### Build and minifies for production
+Build the project in ready-to-serve minified and static files ind dist/ folder:
+
+```bash
+#npm
+npm run build
+
+#yarn
+yarn run build
+```
 
 ## Interfaces
 
@@ -195,7 +220,7 @@ According to the requirements, the api must contain the following end points.
 
 
 ## Room for Improvement
-----
+
 Room for improvement:
 - Serve to production on live environment
 
@@ -208,5 +233,5 @@ To do:
 
 Lizeth La Serna - [@lizelaser](https://github.com/lizelaser) - lizeth.lasernafelices@gmail.com
 
-Project Link: [https://github.com/lizelaser/descubre-front-end](https://github.com/gedzeppelin/descubre-front-end.git)
+Project Link: [https://github.com/lizelaser/descubre-front-end](https://github.com/lizelaser/descubre-front-end.git)
 
