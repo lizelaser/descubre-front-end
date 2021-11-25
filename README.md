@@ -1,15 +1,16 @@
 # Vocational guidance system - Descubre
 > Vocational Guidance application containing psychometric test sections and career information as a guide for students.
 
+Note:The backend repository can be accessed through the following link [https://github.com/lizelaser/descubre-back-end](https://github.com/lizelaser/descubre-back-end.git)
+
 ## Table of Contents
 * [General Info](#general-information)
-* [Requirements](#requirements)
-* [Initial Architecture](#initial-architecture)
-* [Technologies Used](#technologies-used)
 * [Features](#features)
-* [HTTP API](#http-api)
-* [Interfaces](#interfaces)
+* [Technologies Used](#technologies-used)
 * [Setup](#setup)
+* [Usage](#usage)
+* [Contribution](#contribution)
+* [Interfaces](#interfaces)
 * [Project Status](#project-status)
 * [Room for Improvement](#room-for-improvement)
 * [Contact](#contact)
@@ -24,7 +25,7 @@
 <p align="justify">The objective of this project is to develop a vocational guidance application with web technologies, based on psychometric tests of vocational preferences, aptitudes and behavioral profile, with the purpose of supporting pre-university students in the choice of a university or technical career.</p>
 
 
-## Requirements
+### **Requirements**
 
 
 |   **User story**                |          **Description**         |
@@ -48,85 +49,7 @@
 - Sass - version 1.35.2
 
 ## Features
-- Login
-- Account creation for student
-- Show profile
-- Register response of
-- Record test response
-- view career information
-- Show final test result
-
-## HTTP API
-
-According to the requirements, the api must contain the following end points.
-
-#### **`Home`**
-
-* `GET /`
-
-#### **`Login`**
-
-* `POST /login`
-
-#### **`User`**
-
-* `GET /user`
-* `GET /user/:id`
-* `POST /user`
-* `PUT /user/:id`
-* `DELETE /user/:id`
-
-#### **`Role`**
-
-* `GET /role`
-* `GET /role/:id`
-* `POST /role`
-* `PUT /role/:id`
-* `DELETE /role/:id`
-
-#### **`Institution`**
-
-* `GET /instituion`
-* `GET /institution/:id`
-* `POST /institution`
-* `PUT /institution/:id`
-* `DELETE /institution/:id`
-
-#### **`Career`**
-
-* `GET /career`
-* `GET /career/:id`
-* `POST /career`
-* `PUT /career/:id`
-* `DELETE /career/:id`
-
-#### **`Test`**
-
-* `GET /test`
-* `GET /test/:id`
-* `POST /test`
-* `PUT /test/:id`
-* `DELETE /test/:id`
-
-#### **`Alternative`**
-
-* `GET /alternative`
-* `GET /alternative/:id`
-* `POST /alternative`
-* `PUT /alternative/:id`
-* `DELETE /alternative/:id`
-
-#### **`Result`**
-
-* `GET /result`
-* `GET /result/:id`
-* `POST /result`
-
-#### **`Recommendation`**
-
-* `GET /recommendation`
-* `GET /recommendation/:id`
-* `POST /recommendation`
+![features](./images/features.png)
 
 
 ## Setup
@@ -203,10 +126,13 @@ yarn run build
 ## Room for Improvement
 
 Room for improvement:
-- Serve to production on live environment
+- Expand the web system by implementing a module for counseling psychologists that allows them to manage psychometric tests, upload information on careers and universities, and schedule meetings.
+
+- Conduct comprehensive planning to support the implementation of other functionalities associated with vocational guidance variables targeting undergraduate and graduate students in the system.
 
 To do:
-- Automating tests that include other influential variables in vocational guidance
+- Perform unit and integration testing.
+- Serve to production on live environment.
 
 
 
