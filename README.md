@@ -1,7 +1,7 @@
 # Vocational guidance system - Descubre
 > Vocational Guidance application containing psychometric test sections and career information as a guide for students.
 
-Note:The backend repository can be accessed through the following link [https://github.com/lizelaser/descubre-back-end](https://github.com/lizelaser/descubre-back-end.git)
+Note: the backend repository can be accessed through the following link [https://github.com/lizelaser/descubre-back-end](https://github.com/lizelaser/descubre-back-end.git)
 
 ## Table of Contents
 * [General Info](#general-information)
